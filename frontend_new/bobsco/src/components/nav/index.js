@@ -4,6 +4,7 @@ import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
   { name: "Courses", href: "#", current: true },
+  { name: "E-Vedhik", href: "https://vedhikeschools.com/", current: false },
   { name: "Testimonial", href: "#", current: false },
   { name: "About", href: "#", current: false },
   //   { name: "Calendar", href: "#", current: false },

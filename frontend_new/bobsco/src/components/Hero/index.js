@@ -29,7 +29,7 @@ export default function Hero() {
           </button>
         </div>
       </div>
-      <div className="">
+      <div className="order-2 ">
         <img src="images/headerbg.jpg" alt="" className="w-full h-full" />
       </div>
     </section>
