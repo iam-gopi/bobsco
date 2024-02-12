@@ -1,8 +1,29 @@
 const express = require("express");
+const mongoose = require("mongoose");
 
 const router = express.Router();
 
-router.post("/post", (req, res) => {
+const userSchema = new mongoose.Schema({
+  firstName: String,
+  lastName: String,
+  email: String,
+  phone: String,
+  address: String,
+});
+// Compile schema into a model
+const VedhikForm = mongoose.model("VedhikForm", userSchema);
+
+router.post("/evedhik/register", (req, res) => {
+  console.log(req.body);
+  const v = new VedhikForm({
+    firstName: req.body.firstName,
+    lastName: req.body.lastName,
+    email: req.body.email,
+    phone: req.body.phone,
+    address: req.body.address,
+  });
+  const result = v.save();
+  console.log(result);
   res.send("Post API");
 });
 

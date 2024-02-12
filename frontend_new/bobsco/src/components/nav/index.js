@@ -2,20 +2,6 @@ import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
-const navigation = [
-  { name: "Courses", href: "course", current: true, target: "self", click: "" },
-  {
-    name: "E-Vedhik",
-    // href: "https://vedhikeschools.com/",
-    href: "#",
-    current: false,
-    target: "_blank",
-    click: "showModal(); return false;",
-  },
-  { name: "Testimonial", href: "#", current: false, target: "self", click: "" },
-  { name: "About", href: "#", current: false, target: "self", click: "" },
-];
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -60,42 +46,37 @@ export default function Nav() {
                     >
                       Courses
                     </a>
-                    {/* <a
+                    <a
                       key="E-Vedhik"
-                      href=""
+                      href="/evedhik"
                       target=""
                       onClick=""
                       className=" text-gray-900  hover:text-red-800 hover:underline-offset-8 hover:underline text-sm font-semibold py-8"
                       aria-current="page"
-                    > */}
-                    <button
-                      data-modal-target="authentication-modal"
-                      data-modal-toggle="authentication-modal"
-                      className=" text-gray-900  hover:text-red-800 hover:underline-offset-8 hover:underline text-sm font-semibold py-8"
-                      type="button"
                     >
-                      Toggle modal
-                    </button>
-                    {/* </a> */}
-                    {/* {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        target={item.target}
-                        onClick={item.click}
-                        data-modal-target="authentication-modal"
-                        data-modal-toggle="authentication-modal"
-                        className={classNames(
-                          item.current
-                            ? "bg-red-800 text-white"
-                            : "text-black hover:text-red-800 hover:underline-offset-8 hover:underline",
-                          "rounded-md px-3 py-2 text-sm font-medium"
-                        )}
-                        aria-current={item.current ? "page" : undefined}
-                      >
-                        {item.name}
-                      </a>
-                    ))} */}
+                      evedhik
+                    </a>
+
+                    <a
+                      key="Testimonial"
+                      href="#"
+                      target=""
+                      onClick=""
+                      className=" text-gray-900  hover:text-red-800 hover:underline-offset-8 hover:underline text-sm font-semibold py-8"
+                      aria-current="page"
+                    >
+                      Testimonial
+                    </a>
+                    <a
+                      key="About"
+                      href="#"
+                      target=""
+                      onClick=""
+                      className=" text-gray-900  hover:text-red-800 hover:underline-offset-8 hover:underline text-sm font-semibold py-8"
+                      aria-current="page"
+                    >
+                      About
+                    </a>
                   </div>
                 </div>
               </div>
@@ -305,7 +286,7 @@ export default function Nav() {
 
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 px-2 pb-3 pt-2">
-              {navigation.map((item) => (
+              {/* {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
                   as="a"
@@ -320,7 +301,7 @@ export default function Nav() {
                 >
                   {item.name}
                 </Disclosure.Button>
-              ))}
+              ))} */}
             </div>
           </Disclosure.Panel>
         </>

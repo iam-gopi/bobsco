@@ -5,12 +5,17 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Courses from "./components/courses";
+import VedhikModel from "./components/vedhik-model";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const router = createBrowserRouter([
   {
     path: "/course",
     element: <Courses />,
+  },
+  {
+    path: "/evedhik",
+    element: <VedhikModel />,
   },
   {
     path: "/",
