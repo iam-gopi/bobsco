@@ -9,11 +9,9 @@ import Footer from "./components/footer";
 function App() {
   return (
     <>
-      <Nav />
       <Hero />
       <Moto />
       <Courses />
-      <Footer />
     </>
   );
 }
