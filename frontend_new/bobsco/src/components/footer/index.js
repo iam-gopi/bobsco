@@ -8,8 +8,8 @@ export default function Footer() {
   };
   return (
     <footer className="bg-gray-900" style={footerbgImage}>
-      <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-        <div className="md:flex md:justify-between">
+      <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 ">
+        <div className="md:flex md:justify-between md:items-center">
           <div className="mb-6 md:mb-0">
             <a href="#" className="flex items-center">
               <img
@@ -27,16 +27,19 @@ export default function Footer() {
               <h2 className="mb-6 text-sm font-semibold text-white uppercase ">
                 Resources
               </h2>
-              <ul className="text-white font-medium ">
+              <ul className="text-white font-medium list-none">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline text-white">
+                  <a
+                    href="#"
+                    className=" text-white no-underline hover:underline hover:underline-offset-4"
+                  >
                     asdf
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://tailwindcss.com/"
-                    className="hover:underline text-white"
+                    href="#"
+                    className=" text-white no-underline hover:underline hover:underline-offset-4"
                   >
                     Tailwind CSS
                   </a>
@@ -47,16 +50,19 @@ export default function Footer() {
               <h2 className="mb-6 text-sm font-semibold text-white uppercase ">
                 Follow us
               </h2>
-              <ul className="text-white font-medium">
+              <ul className="text-white font-medium list-none">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline text-white">
+                  <a
+                    href="#"
+                    className=" text-white no-underline hover:underline hover:underline-offset-4"
+                  >
                     Github
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://discord.gg/4eeurUVvTy"
-                    className="hover:underline text-white"
+                    href="#"
+                    className=" text-white no-underline hover:underline hover:underline-offset-4"
                   >
                     Discord
                   </a>
@@ -67,14 +73,20 @@ export default function Footer() {
               <h2 className="mb-6 text-sm font-semibold text-white uppercase">
                 Legal
               </h2>
-              <ul className="text-white font-medium">
+              <ul className="text-white font-medium list-none">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline text-white">
+                  <a
+                    href="#"
+                    className=" text-white no-underline hover:underline hover:underline-offset-4"
+                  >
                     Privacy Policy
                   </a>
                 </li>
-                <li className=" transition ease-in-out delay-150 hover:translate-x-11 hover:scale-110 duration-300">
-                  <a href="#" className="text-white ">
+                <li className=" ">
+                  <a
+                    href="#"
+                    className="text-white no-underline hover:underline hover:underline-offset-4 transition ease-in-out delay-150 hover:translate-x-11 hover:scale-110 duration-300"
+                  >
                     Terms &amp; Conditions
                   </a>
                 </li>
@@ -82,15 +94,16 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-white sm:text-center ">
             © {new Date().getFullYear()}
-            <a href="#" className="hover:underline underline-offset-4">
+            <a href="#" className="text-white underline-offset-4 ps-2">
               Bobsco Edu
             </a>
             . All Rights Reserved.
           </span>
+
           <div className="flex mt-4 sm:justify-center sm:mt-0">
             <a href="#" className="text-white hover:text-gray-500 ">
               <svg

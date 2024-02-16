@@ -33,7 +33,7 @@ export default function Hero() {
         <img
           src="images/headerbg.jpg"
           alt="header bg - Bobsco edu"
-          className="w-full h-5/6 shadow-2xl scale-150"
+          className="w-full h shadow-2xl "
         />
       </div>
     </section>
