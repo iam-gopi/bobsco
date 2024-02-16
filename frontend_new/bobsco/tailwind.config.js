@@ -4,6 +4,10 @@ module.exports = {
   theme: {
     extend: {
       animation: ["group-hover"],
+      colors: {
+        primaryRed: "#ed1c24",
+        primaryDarkBlue: "#002C42",
+      },
     },
   },
   plugins: [],

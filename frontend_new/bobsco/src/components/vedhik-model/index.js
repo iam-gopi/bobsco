@@ -33,7 +33,6 @@ const VedhikModel = () => {
 
   return (
     <>
-      <Nav />
       <p className="text-3xl text-center my-20">Kindly do fill the form.</p>
       <form className="max-w-md mx-auto" onSubmit={handleSubmit}>
         <div className="grid md:grid-cols-2 md:gap-6">

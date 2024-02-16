@@ -12,11 +12,11 @@ export default function Nav() {
       {({ open }) => (
         <>
           <div className="max-w-12xl sm:h-12 h-20 grid sm:grid-cols-2">
-            <div className="text-center h-full text-white bg-[#002C42]  flex justify-center items-center">
+            <div className="text-center h-full text-white bg-primaryDarkBlue  flex justify-center items-center">
               <p>Welcome to Bobsco Edu</p>
             </div>
-            <div className="bg-[#ed1c24] h-full flex justify-center items-center  text-white gap-6">
-              <p className="hover:cursor-pointer">
+            <div className="bg-primaryRed h-full flex justify-center items-center  text-white gap-6">
+              <p className="hover:cursor-pointe">
                 <a href="mailto:enquiry@vedhikeschools.com">
                   enquiry@vedhikeschools.com
                 </a>
@@ -24,7 +24,7 @@ export default function Nav() {
               <p>+91 484 452 77 99</p>
             </div>
           </div>
-          <div className="mx-auto max-w-10xl px-2 sm:px-6 lg:px-8 bg-gray-100 shadow-2xl">
+          <div className="mx-auto max-w-10xl px-2 sm:px-6 lg:px-8 bg-white shadow-2xl">
             <div className="relative flex h-28 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -41,7 +41,7 @@ export default function Nav() {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <img
-                    className="h-10 w-auto"
+                    className="relative h-20 w-auto"
                     src="images/logo.png"
                     alt="Bobsco Edu Logo"
                   />
@@ -53,7 +53,7 @@ export default function Nav() {
                       href="course"
                       target="blank"
                       onClick=""
-                      className=" text-gray-900  hover:text-red-800 hover:underline-offset-8 hover:underline text-sm font-semibold py-8"
+                      className=" text-gray-900  hover:text-primaryRed hover:underline-offset-8 hover:underline font-semibold py-8 text-lg"
                       aria-current="page"
                     >
                       Courses
@@ -63,7 +63,7 @@ export default function Nav() {
                       href="/evedhik"
                       target=""
                       onClick=""
-                      className=" text-gray-900  hover:text-red-800 hover:underline-offset-8 hover:underline text-sm font-semibold py-8"
+                      className=" text-gray-900  hover:text-primaryRed hover:underline-offset-8 hover:underline text-lg font-semibold py-8"
                       aria-current="page"
                     >
                       evedhik
@@ -74,7 +74,7 @@ export default function Nav() {
                       href="#"
                       target=""
                       onClick=""
-                      className=" text-gray-900  hover:text-red-800 hover:underline-offset-8 hover:underline text-sm font-semibold py-8"
+                      className=" text-gray-900  hover:text-primaryRed hover:underline-offset-8 hover:underline text-lg font-semibold py-8"
                       aria-current="page"
                     >
                       Testimonial
@@ -84,7 +84,7 @@ export default function Nav() {
                       href="#"
                       target=""
                       onClick=""
-                      className=" text-gray-900  hover:text-red-800 hover:underline-offset-8 hover:underline text-sm font-semibold py-8"
+                      className=" text-gray-900  hover:text-primaryRed hover:underline-offset-8 hover:underline text-lg font-semibold py-8"
                       aria-current="page"
                     >
                       About
@@ -131,7 +131,7 @@ export default function Nav() {
                             href="#"
                             className={classNames(
                               active
-                                ? "bg-red-800 text-white mx-3 rounded-lg"
+                                ? "bg-primaryRed text-white mx-3 rounded-lg"
                                 : "",
                               "block px-4 py-2 text-sm text-gray-700"
                             )}
@@ -146,7 +146,7 @@ export default function Nav() {
                             href="#"
                             className={classNames(
                               active
-                                ? "bg-red-800 text-white mx-3 rounded-lg"
+                                ? "bg-primaryRed text-white mx-3 rounded-lg"
                                 : "",
                               "block px-4 py-2 text-sm text-gray-700"
                             )}
@@ -161,7 +161,7 @@ export default function Nav() {
                             href="#"
                             className={classNames(
                               active
-                                ? "bg-red-800 text-white mx-3 rounded-lg"
+                                ? "bg-primaryRed text-white mx-3 rounded-lg"
                                 : "",
                               "block px-4 py-2 text-sm text-gray-700"
                             )}
