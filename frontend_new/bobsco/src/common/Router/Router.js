@@ -1,8 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
 import Courses from "../../components/courses";
 import VedhikModel from "../../components/vedhik-model";
-import App from "../../App";
 import About from "../../components/about/About";
+import Home from "../../components/home/Home";
+import Testimonial from "../../components/testimonial/Testimonial";
 
 export default createBrowserRouter([
   {
@@ -15,10 +16,14 @@ export default createBrowserRouter([
   },
   {
     path: "/",
-    element: <App />,
+    element: <Home />,
   },
   {
     path: "/about",
     element: <About />,
+  },
+  {
+    path: "/testimonial",
+    element: <Testimonial />,
   },
 ]);

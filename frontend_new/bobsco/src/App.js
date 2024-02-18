@@ -1,18 +1,13 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Nav from "./components/nav";
-import Hero from "./components/Hero";
-import Moto from "./components/moto";
-import Courses from "./components/courses";
-import Footer from "./components/footer";
+import Router from "./common/Router/Router";
+import { RouterProvider } from "react-router-dom";
+import Layout from "./components/Layout";
 
 function App() {
   return (
-    <>
-      <Hero />
-      <Moto />
-      <Courses />
-    </>
+    <Layout>
+      <RouterProvider router={Router} />
+    </Layout>
   );
 }
 

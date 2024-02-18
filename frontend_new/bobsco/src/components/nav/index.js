@@ -11,21 +11,8 @@ export default function Nav() {
     <Disclosure as="nav" className="bg-white bg-gray-100">
       {({ open }) => (
         <>
-          <div className="max-w-12xl sm:h-12 h-20 grid sm:grid-cols-2">
-            <div className="text-center h-full text-white bg-primaryDarkBlue  flex justify-center items-center">
-              <p>Welcome to Bobsco Edu</p>
-            </div>
-            <div className="bg-primaryRed h-full flex justify-center items-center  text-white gap-6">
-              <p className="hover:cursor-pointe">
-                <a href="mailto:enquiry@vedhikeschools.com">
-                  enquiry@vedhikeschools.com
-                </a>
-              </p>
-              <p>+91 484 452 77 99</p>
-            </div>
-          </div>
-          <div className="mx-auto max-w-10xl px-2 sm:px-6 lg:px-8 bg-white shadow-2xl">
-            <div className="relative flex h-28 items-center justify-between">
+          <div className=" px-2 sm:px-6 lg:px-8 bg-white shadow-2xl">
+            <div className="mx-auto container relative flex h-28 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
@@ -40,20 +27,20 @@ export default function Nav() {
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                  <img
-                    className="relative h-20 w-auto"
-                    src="images/logo.png"
-                    alt="Bobsco Edu Logo"
-                  />
+                  <a href="/">
+                    <img
+                      className="relative h-20 w-auto"
+                      src="images/logo.png"
+                      alt="Bobsco Edu Logo"
+                    />
+                  </a>
                 </div>
                 <div className="hidden sm:ml-6 sm:block ps-14">
                   <div className="flex space-x-4">
                     <a
                       key="Courses"
                       href="course"
-                      target="blank"
-                      onClick=""
-                      className=" text-gray-900  hover:text-primaryRed hover:underline-offset-8 hover:underline font-semibold py-8 text-lg"
+                      className=" text-gray-900  hover:text-primaryRed hover:underline-offset-8 hover:underline font-semibold py-8 text-xl"
                       aria-current="page"
                     >
                       Courses
@@ -61,9 +48,7 @@ export default function Nav() {
                     <a
                       key="E-Vedhik"
                       href="/evedhik"
-                      target=""
-                      onClick=""
-                      className=" text-gray-900  hover:text-primaryRed hover:underline-offset-8 hover:underline text-lg font-semibold py-8"
+                      className=" text-gray-900  hover:text-primaryRed hover:underline-offset-8 hover:underline text-xl font-semibold py-8"
                       aria-current="page"
                     >
                       evedhik
@@ -71,20 +56,18 @@ export default function Nav() {
 
                     <a
                       key="Testimonial"
-                      href="#"
+                      href="/testimonial"
                       target=""
                       onClick=""
-                      className=" text-gray-900  hover:text-primaryRed hover:underline-offset-8 hover:underline text-lg font-semibold py-8"
+                      className=" text-gray-900  hover:text-primaryRed hover:underline-offset-8 hover:underline text-xl font-semibold py-8"
                       aria-current="page"
                     >
                       Testimonial
                     </a>
                     <a
                       key="About"
-                      href="#"
-                      target=""
-                      onClick=""
-                      className=" text-gray-900  hover:text-primaryRed hover:underline-offset-8 hover:underline text-lg font-semibold py-8"
+                      href="/about"
+                      className=" text-gray-900  hover:text-primaryRed hover:underline-offset-8 hover:underline text-xl font-semibold py-8"
                       aria-current="page"
                     >
                       About
