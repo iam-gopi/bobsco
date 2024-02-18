@@ -37,7 +37,7 @@ const About = () => {
             with Vedhik academy to create this eLearning Space in the GCC.
           </p>
           <div className="flex sm:justify-start justify-center">
-            <button className="bg-primaryRed text-white px-10 py-5 text-lg font-bold rounded-lg hover:shadow-2xl hover:bg-gray-100 hover:text-primaryRed hover:border-primaryRed hover:border-2 transition ease-in-out duration-300 hover:translate-x-8 mt-10 ">
+            <button className="bg-primaryRed text-white px-10 py-5 text-xl font-bold rounded-lg hover:shadow-2xl hover:bg-gray-100 hover:text-primaryRed hover:border-primaryRed hover:border-2 transition ease-in-out duration-300 hover:translate-x-1 mt-10 ">
               Learn More
             </button>
           </div>

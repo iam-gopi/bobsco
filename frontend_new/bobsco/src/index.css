@@ -4,6 +4,7 @@
 
 body {
   font-family: "Barlow Condensed", sans-serif;
+  /* overflow-x: hidden; */
 }
 
 .custom-underline-color {

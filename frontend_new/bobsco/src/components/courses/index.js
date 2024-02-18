@@ -3,7 +3,7 @@ import Card from "../card";
 
 const Courses = () => {
   return (
-    <section className="mx-auto  py-14 bg-gray-100 px-5">
+    <section className="mx-auto  py-28 bg-gray-100 px-5">
       <main className="mx-auto sm:container">
         <p className="capitalize text-3xl font-bold">Top Courses</p>
         <div className="grid grid-rows-1  md:grid-flow-col gap-4 mt-6">

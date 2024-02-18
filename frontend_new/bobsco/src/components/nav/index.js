@@ -162,6 +162,43 @@ export default function Nav() {
 
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 px-2 pb-3 pt-2">
+              <div className="flex space-x-4">
+                <a
+                  key="Courses"
+                  href="course"
+                  className=" text-gray-900  hover:text-primaryRed hover:underline-offset-8 hover:underline font-semibold py-8 text-xl"
+                  aria-current="page"
+                >
+                  Courses
+                </a>
+                <a
+                  key="E-Vedhik"
+                  href="/evedhik"
+                  className=" text-gray-900  hover:text-primaryRed hover:underline-offset-8 hover:underline text-xl font-semibold py-8"
+                  aria-current="page"
+                >
+                  evedhik
+                </a>
+
+                <a
+                  key="Testimonial"
+                  href="/testimonial"
+                  target=""
+                  onClick=""
+                  className=" text-gray-900  hover:text-primaryRed hover:underline-offset-8 hover:underline text-xl font-semibold py-8"
+                  aria-current="page"
+                >
+                  Testimonial
+                </a>
+                <a
+                  key="About"
+                  href="/about"
+                  className=" text-gray-900  hover:text-primaryRed hover:underline-offset-8 hover:underline text-xl font-semibold py-8"
+                  aria-current="page"
+                >
+                  About
+                </a>
+              </div>
               {/* {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}

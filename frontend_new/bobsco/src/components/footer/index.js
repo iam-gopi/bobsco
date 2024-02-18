@@ -8,7 +8,7 @@ export default function Footer() {
   };
   return (
     <footer className="bg-gray-900" style={footerbgImage}>
-      <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 ">
+      <div className="mx-auto container w-full  p-4 py-6 lg:py-8 ">
         <div className="md:flex md:justify-between md:items-center">
           <div className="mb-6 md:mb-0">
             <a href="#" className="flex items-center">
@@ -24,14 +24,14 @@ export default function Footer() {
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-white uppercase ">
+              <h2 className="mb-6 text-lg font-bold text-white uppercase underline underline-offset-8 transition ease-in-out delay-150 duration-150">
                 Resources
               </h2>
               <ul className="text-white font-medium list-none">
                 <li className="mb-4">
                   <a
                     href="#"
-                    className=" text-white no-underline hover:underline hover:underline-offset-4"
+                    className=" text-white no-underline text-lg  transition ease-in-out delay-100 duration-100 hover:text-primaryRed hover:scale-150"
                   >
                     asdf
                   </a>
@@ -39,7 +39,7 @@ export default function Footer() {
                 <li>
                   <a
                     href="#"
-                    className=" text-white no-underline hover:underline hover:underline-offset-4"
+                    className="text-white no-underline text-lg hover:text-primaryRed  transition ease-in-out delay-150 duration-105"
                   >
                     Tailwind CSS
                   </a>
@@ -47,14 +47,14 @@ export default function Footer() {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-white uppercase ">
+              <h2 className="mb-6 text-lg font-bold text-white uppercase underline underline-offset-8 transition ease-in-out delay-150 duration-150 ">
                 Follow us
               </h2>
               <ul className="text-white font-medium list-none">
                 <li className="mb-4">
                   <a
                     href="#"
-                    className=" text-white no-underline hover:underline hover:underline-offset-4"
+                    className=" text-white no-underline text-lg hover:text-primaryRed  transition ease-in-out delay-150 duration-105"
                   >
                     Github
                   </a>
@@ -62,7 +62,7 @@ export default function Footer() {
                 <li>
                   <a
                     href="#"
-                    className=" text-white no-underline hover:underline hover:underline-offset-4"
+                    className="text-white no-underline text-lg hover:text-primaryRed  transition ease-in-out delay-150 duration-105"
                   >
                     Discord
                   </a>
@@ -70,14 +70,14 @@ export default function Footer() {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-white uppercase">
+              <h2 className="mb-6 text-lg font-bold text-white uppercase underline underline-offset-8 transition ease-in-out delay-150 duration-150">
                 Legal
               </h2>
               <ul className="text-white font-medium list-none">
                 <li className="mb-4">
                   <a
                     href="#"
-                    className=" text-white no-underline hover:underline hover:underline-offset-4"
+                    className=" text-white no-underline text-lg hover:text-primaryRed  transition ease-in-out delay-150 duration-105"
                   >
                     Privacy Policy
                   </a>
@@ -85,7 +85,7 @@ export default function Footer() {
                 <li className=" ">
                   <a
                     href="#"
-                    className="text-white no-underline hover:underline hover:underline-offset-4 transition ease-in-out delay-150 hover:translate-x-11 hover:scale-110 duration-300"
+                    className="text-white no-underline text-lg hover:text-primaryRed  transition ease-in-out delay-150 duration-105"
                   >
                     Terms &amp; Conditions
                   </a>
@@ -96,7 +96,7 @@ export default function Footer() {
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-white sm:text-center ">
+          <span className="text-lg text-white sm:text-center ">
             © {new Date().getFullYear()}
             <a href="#" className="text-white underline-offset-4 ps-2">
               Bobsco Edu
