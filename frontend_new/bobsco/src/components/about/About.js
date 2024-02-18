@@ -4,14 +4,14 @@ const About = () => {
   return (
     <section className="bg-gray-100 py-28">
       <main className="mx-auto container grid sm:grid-cols-2 gap-4">
-        <div>
+        <div data-aos="fade-right" data-aos-duration="1000">
           <img
             className="rounded-lg shadow transition ease-in duration-150 hover:shadow-2xl border-white p-3"
             src="images/carousel/33.png"
             alt=""
           />
         </div>
-        <div>
+        <div data-aos="fade-left" data-aos-duration="1000">
           <p className="text-gray-700 mb-3 text-lg text-center sm:text-left sm:mt-0 mt-10">
             Bobsco Edu
           </p>
