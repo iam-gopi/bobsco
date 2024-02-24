@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
+import countryList from "react-select-country-list";
+import Select from "react-select";
 
 const VedhikModel = () => {
   const [formData, setFormData] = useState({
@@ -7,9 +9,12 @@ const VedhikModel = () => {
     email: "",
     phone: "",
     address: "",
+    country: "",
   });
+  const options = useMemo(() => countryList().getData(), []);
 
   const handleChange = (event) => {
+    console.log(event);
     const { name, value } = event.target;
     setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
   };
@@ -132,6 +137,14 @@ const VedhikModel = () => {
             autoComplete="false"
             aria-autocomplete="none"
             value={formData.address}
+          />
+        </div>
+        <div>
+          <Select
+            name="country"
+            options={options}
+            value={formData.country}
+            onChange={handleChange}
           />
         </div>
         <button

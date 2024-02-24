@@ -29,7 +29,7 @@ export default function Nav() {
                 <div className="flex flex-shrink-0 items-center">
                   <a href="/">
                     <img
-                      className="relative h-20 w-auto"
+                      className="relative h-24 w-auto"
                       src="images/logo.png"
                       alt="Bobsco Edu Logo"
                     />
@@ -51,9 +51,16 @@ export default function Nav() {
                       className=" text-gray-900  hover:text-primaryRed hover:underline-offset-8 hover:underline text-xl font-semibold py-8"
                       aria-current="page"
                     >
-                      evedhik
+                      eVedhik
                     </a>
-
+                    <a
+                      key="Gallery"
+                      href="/gallery"
+                      className=" text-gray-900  hover:text-primaryRed hover:underline-offset-8 hover:underline text-xl font-semibold py-8"
+                      aria-current="page"
+                    >
+                      Gallery
+                    </a>
                     <a
                       key="Testimonial"
                       href="/testimonial"
@@ -199,22 +206,6 @@ export default function Nav() {
                   About
                 </a>
               </div>
-              {/* {navigation.map((item) => (
-                <Disclosure.Button
-                  key={item.name}
-                  as="a"
-                  href={item.href}
-                  className={classNames(
-                    item.current
-                      ? "bg-gray-900 text-white"
-                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                    "block rounded-md px-3 py-2 text-base font-medium"
-                  )}
-                  aria-current={item.current ? "page" : undefined}
-                >
-                  {item.name}
-                </Disclosure.Button>
-              ))} */}
             </div>
           </Disclosure.Panel>
         </>

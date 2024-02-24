@@ -4,11 +4,16 @@ import VedhikModel from "../../components/vedhik-model";
 import About from "../../components/about/About";
 import Home from "../../components/home/Home";
 import Testimonial from "../../components/testimonial/Testimonial";
+import Gallery from "../../components/gallery/Gallery";
 
 export default createBrowserRouter([
   {
     path: "/course",
     element: <Courses />,
+  },
+  {
+    path: "/gallery",
+    element: <Gallery />,
   },
   {
     path: "/evedhik",
