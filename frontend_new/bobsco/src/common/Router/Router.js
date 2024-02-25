@@ -12,6 +12,10 @@ export default createBrowserRouter([
     element: <Courses />,
   },
   {
+    path: "/course/:name",
+    element: <Courses />,
+  },
+  {
     path: "/gallery",
     element: <Gallery />,
   },

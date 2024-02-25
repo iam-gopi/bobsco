@@ -8,15 +8,21 @@ const VedhikModel = () => {
     lastName: "",
     email: "",
     phone: "",
-    address: "",
     country: "",
   });
   const options = useMemo(() => countryList().getData(), []);
 
   const handleChange = (event) => {
-    console.log(event);
     const { name, value } = event.target;
     setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
+  };
+
+  const handleCountryChange = (event) => {
+    console.log(event);
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      country: event.label,
+    }));
   };
 
   const handleSubmit = (event) => {
@@ -38,7 +44,7 @@ const VedhikModel = () => {
   return (
     <section className="py-28 ">
       <p className="text-3xl text-center my-20">Kindly do fill the form.</p>
-      <form className="max-w-md mx-auto" onSubmit={handleSubmit}>
+      <form className="max-w-md mx-5 sm:mx-auto " onSubmit={handleSubmit}>
         <div className="grid md:grid-cols-2 md:gap-6">
           <div className="relative z-0 w-full mb-5 group">
             <input
@@ -97,7 +103,7 @@ const VedhikModel = () => {
           />
           <label
             for="email"
-            className="peer-focus:font-medium absolute text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-primaryRed peer-focus:dark:text-primaryRd peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            className="peer-focus:font-medium absolute text-lg text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-primaryRed peer-focus:dark:text-primaryRd peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
           >
             Email address
           </label>
@@ -120,31 +126,19 @@ const VedhikModel = () => {
             />
             <label
               for="phone"
-              className="peer-focus:font-medium absolute text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-primaryRed peer-focus:dark:text-primaryRed peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              className="peer-focus:font-medium absolute text-lg text-gray-500  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-primaryRed peer-focus:dark:text-primaryRed peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
             >
               Phone number
             </label>
           </div>
         </div>
-        <div>
-          <input
-            id="address"
-            type="text"
-            class="block p-2.5 w-full text-lg text-gray-900 rounded-lg border-0 border-b-2 bg-transparent focus:border-primaryRed focus:outline-none h-28"
-            placeholder="Provide address here"
-            name="address"
-            onChange={handleChange}
-            autoComplete="false"
-            aria-autocomplete="none"
-            value={formData.address}
-          />
-        </div>
+
         <div>
           <Select
             name="country"
             options={options}
-            value={formData.country}
-            onChange={handleChange}
+            value={formData.country.split("-")[1]}
+            onChange={handleCountryChange}
           />
         </div>
         <button

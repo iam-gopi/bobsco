@@ -29,7 +29,7 @@ export default function Nav() {
                 <div className="flex flex-shrink-0 items-center">
                   <a href="/">
                     <img
-                      className="relative h-24 w-auto"
+                      className="relative h-28 w-auto"
                       src="images/logo.png"
                       alt="Bobsco Edu Logo"
                     />
@@ -44,14 +44,6 @@ export default function Nav() {
                       aria-current="page"
                     >
                       Courses
-                    </a>
-                    <a
-                      key="E-Vedhik"
-                      href="/evedhik"
-                      className=" text-gray-900  hover:text-primaryRed hover:underline-offset-8 hover:underline text-xl font-semibold py-8"
-                      aria-current="page"
-                    >
-                      eVedhik
                     </a>
                     <a
                       key="Gallery"
@@ -163,6 +155,15 @@ export default function Nav() {
                     </Menu.Items>
                   </Transition>
                 </Menu>
+                <div className="flex flex-shrink-0 items-center">
+                  <a href="/">
+                    <img
+                      className="relative hidden lg:block h-24 px-2 w-auto"
+                      src="images/evedhik.svg"
+                      alt="Evedhik Logo"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -180,11 +181,11 @@ export default function Nav() {
                 </a>
                 <a
                   key="E-Vedhik"
-                  href="/evedhik"
+                  href="/gallery"
                   className=" text-gray-900  hover:text-primaryRed hover:underline-offset-8 hover:underline text-xl font-semibold py-8"
                   aria-current="page"
                 >
-                  evedhik
+                  Gallery
                 </a>
 
                 <a
