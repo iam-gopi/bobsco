@@ -4,7 +4,13 @@ export default function Card({ courseName, smallDesc, img }) {
   return (
     <div className="max-w-sm bg-white border border-gray-200 rounded-lg transition ease-in-out duration-150 hover:shadow-2xl hover:scale-105">
       <a href="#">
-        <img className="rounded-t-lg h-52 w-full" src={img} alt="" />
+        <img
+          className="rounded-t-lg h-52 w-full"
+          src={img}
+          alt=""
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        />
       </a>
       <div className="p-5">
         <a href="#">
@@ -15,7 +21,11 @@ export default function Card({ courseName, smallDesc, img }) {
         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
           {smallDesc}
         </p>
-        <div className="flex justify-center">
+        <div
+          className="flex justify-center"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
           <a
             href="#"
             className="inline-flex items-center   px-3 py-2 text-lg font-medium text-white bg-primaryRed rounded-lg hover:bg-primaryRed focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-primaryRed dark:hover:bg-red-700 dark:focus:ring-blue-800 mt-5"
