@@ -42,10 +42,10 @@ export default function Hero() {
 
   return (
     <Slider {...settings}>
-      <div className="relative">
+      <div className="relative overflow-x-hidden">
         <img
           src="images/carousel/11.png"
-          className="w-full h-[750px] object-cover"
+          className="w-full h-[750px] object-cover overflow-x-hidden"
           alt=""
         />
         <div className=" absolute  top-0 bg-gray-700 bg-opacity-50 z-10 w-full h-full text-center text-white flex justify-center items-center">
@@ -54,10 +54,10 @@ export default function Hero() {
           </p>
         </div>
       </div>
-      <div className="relative">
+      <div className="relative overflow-x-hidden">
         <img
           src="images/carousel/22.png"
-          className="w-full h-[750px] object-cover"
+          className="w-full h-[750px] object-cover overflow-x-hidden"
           alt=""
         />
         <div className=" absolute top-0 bg-gray-900 bg-opacity-50 w-full h-full text-center text-white flex justify-center items-center">
@@ -66,10 +66,10 @@ export default function Hero() {
           </p>
         </div>
       </div>
-      <div className="relative">
+      <div className="relative overflow-x-hidden">
         <img
           src="images/carousel/33.png"
-          className="w-full h-[750px] object-cover"
+          className="w-full h-[750px] object-cover overflow-x-hidden"
           alt=""
         />
         <div className=" absolute top-0 bg-gray-900 bg-opacity-50 w-full h-full text-center text-white flex justify-center items-center">
@@ -79,10 +79,10 @@ export default function Hero() {
           </p>
         </div>
       </div>
-      <div className="relative">
+      <div className="relative overflow-x-hidden">
         <img
           src="images/carousel/33.png"
-          className="w-full h-[750px] object-cover"
+          className="w-full h-[750px] object-cover overflow-x-hidden"
           alt=""
         />
         <div className=" absolute top-0 bg-gray-900 bg-opacity-50 w-full h-full text-center text-white flex justify-center items-center">

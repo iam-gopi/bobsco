@@ -6,26 +6,27 @@ const Courses = () => {
     <section className="mx-auto  py-28 bg-gray-100 px-5">
       <main className="mx-auto sm:container">
         <p className="capitalize text-3xl font-bold">Top Courses</p>
-        <div className="grid grid-rows-1  md:grid-flow-col gap-4 mt-6">
+        <div className="grid grid-rows-1 md:grid-flow-col gap-4 mt-6">
           <Card
-            courseName="Data Analysis"
-            smallDesc="Data analysis involves inspecting, cleansing, transforming, and modeling data to discover useful information, inform conclusions, and support decision-making. It's a critical process in various domains to extract insights and assess the performance of different strategies or processes."
+            courseName="Technical - IIT Offered Courses"
+            smallDesc="IITs offer specialized programming courses within Computer Science and Engineering departments, focusing on areas like Algorithms, Data Structures, Machine Learning, Artificial Intelligence, Software Engineering, and Web Technologies, aimed at equipping students with cutting-edge programming skills and computational thinking."
             img="images/course/DA.jpg"
           />
           <Card
-            courseName="Artificial Intelligence"
-            smallDesc="Artificial Intelligence (AI) encompasses the development of computer systems that can perform tasks typically requiring human intelligence, such as visual perception, speech recognition, decision-making, and language translation. It aims to simulate human cognitive processes through algorithms and machine learning models."
+            courseName="Non Technical Courses"
+            smallDesc="Non-technical courses offered such as Humanities and Social Sciences, Design, aimed at providing a holistic education that fosters critical thinking, creativity, and a deep understanding of societal impacts. These courses are designed to complement technical education with a broad perspective on global challenges and human values."
             img="images/course/AI.webp"
           />
           <Card
-            courseName="Data Science"
-            smallDesc="Data Science is an interdisciplinary field that uses scientific methods, processes, algorithms, and systems to extract knowledge and insights from structured and unstructured data. It combines aspects of statistics, data analysis, machine learning, and their related methods to understand and analyze actual phenomena with data."
+            courseName="Language Courses"
+            smallDesc="Language exam preparation courses focus on enhancing proficiency in languages like English, French, German, and Spanish, specifically targeting international exams such as TOEFL, IELTS, DELF, and DELE, to equip students with the necessary skills for academic and professional success in global settings."
             img="images/course/DS.jpg"
           />
           <Card
-            courseName="Data Engineering"
-            smallDesc="Data Engineering involves the design, construction, and maintenance of systems for collecting, storing, and analyzing data at scale. It focuses on the practical application of data collection and data processing frameworks, ensuring data is accessible and usable for analytics and machine learning tasks."
+            courseName="Competitive Exam Courses"
+            smallDesc="CUET, JEE, NEET, CLAT, Civil Services, UPSC, PSC, SSC, Banking, and RRB exams are competitive entrance and recruitment tests in India for universities, engineering, medical, public sector jobs, and banking sectors. Exam patterns, and strategic approaches to succeed. These courses aim to equip aspirants with the knowledge, skills, and techniques to excel in these exams."
             img="images/course/DE.jpg"
+            url="/evedhik"
           />
         </div>
       </main>

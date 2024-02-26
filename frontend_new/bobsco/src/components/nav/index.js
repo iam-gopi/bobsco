@@ -29,7 +29,7 @@ export default function Nav() {
                 <div className="flex flex-shrink-0 items-center">
                   <a href="/">
                     <img
-                      className="relative h-20 w-auto"
+                      className="relative h-28 w-auto"
                       src="images/logo.png"
                       alt="Bobsco Edu Logo"
                     />
@@ -46,14 +46,13 @@ export default function Nav() {
                       Courses
                     </a>
                     <a
-                      key="E-Vedhik"
-                      href="/evedhik"
+                      key="Gallery"
+                      href="/gallery"
                       className=" text-gray-900  hover:text-primaryRed hover:underline-offset-8 hover:underline text-xl font-semibold py-8"
                       aria-current="page"
                     >
-                      evedhik
+                      Gallery
                     </a>
-
                     <a
                       key="Testimonial"
                       href="/testimonial"
@@ -156,6 +155,15 @@ export default function Nav() {
                     </Menu.Items>
                   </Transition>
                 </Menu>
+                <div className="flex flex-shrink-0 items-center">
+                  <a href="/">
+                    <img
+                      className="relative hidden lg:block h-24 px-2 w-auto"
+                      src="images/evedhik.svg"
+                      alt="Evedhik Logo"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -173,11 +181,11 @@ export default function Nav() {
                 </a>
                 <a
                   key="E-Vedhik"
-                  href="/evedhik"
+                  href="/gallery"
                   className=" text-gray-900  hover:text-primaryRed hover:underline-offset-8 hover:underline text-xl font-semibold py-8"
                   aria-current="page"
                 >
-                  evedhik
+                  Gallery
                 </a>
 
                 <a
@@ -199,22 +207,6 @@ export default function Nav() {
                   About
                 </a>
               </div>
-              {/* {navigation.map((item) => (
-                <Disclosure.Button
-                  key={item.name}
-                  as="a"
-                  href={item.href}
-                  className={classNames(
-                    item.current
-                      ? "bg-gray-900 text-white"
-                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                    "block rounded-md px-3 py-2 text-base font-medium"
-                  )}
-                  aria-current={item.current ? "page" : undefined}
-                >
-                  {item.name}
-                </Disclosure.Button>
-              ))} */}
             </div>
           </Disclosure.Panel>
         </>

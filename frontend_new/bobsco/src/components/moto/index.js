@@ -10,7 +10,7 @@ const Moto = () => {
   return (
     <>
       <section
-        className="mx-auto  max-w-12xl py-14 bg-red-800 text-white py-16 h-96"
+        className="mx-auto  max-w-12xl bg-red-800 text-white py-16 h-96 overflow-x-hidden"
         style={motobgImage}
       >
         <div
