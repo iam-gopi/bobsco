@@ -30,7 +30,7 @@ export default function Nav() {
                   <a href="/">
                     <img
                       className="relative h-28 w-auto"
-                      src="images/logo.png"
+                      src={`${process.env.PUBLIC_URL}/images/logo.png`}
                       alt="Bobsco Edu Logo"
                     />
                   </a>
@@ -159,7 +159,7 @@ export default function Nav() {
                   <a href="/">
                     <img
                       className="relative hidden lg:block h-24 px-2 w-auto"
-                      src="images/evedhik.svg"
+                      src={`${process.env.PUBLIC_URL}/images/evedhik.svg`}
                       alt="Evedhik Logo"
                     />
                   </a>

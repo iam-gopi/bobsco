@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Card({ courseName, smallDesc, img, url }) {
   return (
-    <div className="max-w-sm bg-white border border-gray-200 rounded-lg transition ease-in-out duration-150 hover:shadow-2xl hover:scale-105">
+    <div className="w-full bg-white border border-gray-200 rounded-lg transition ease-in-out duration-150 hover:shadow-2xl hover:scale-105">
       <a href="#">
         <img
           className="rounded-t-lg h-52 w-full"

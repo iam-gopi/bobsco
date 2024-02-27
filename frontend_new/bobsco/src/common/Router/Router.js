@@ -5,6 +5,7 @@ import About from "../../components/about/About";
 import Home from "../../components/home/Home";
 import Testimonial from "../../components/testimonial/Testimonial";
 import Gallery from "../../components/gallery/Gallery";
+import SubCourses from "../../components/sub-courses/SubCourses";
 
 export default createBrowserRouter([
   {
@@ -12,8 +13,8 @@ export default createBrowserRouter([
     element: <Courses />,
   },
   {
-    path: "/course/:name",
-    element: <Courses />,
+    path: "/course/:id",
+    element: <SubCourses />,
   },
   {
     path: "/gallery",

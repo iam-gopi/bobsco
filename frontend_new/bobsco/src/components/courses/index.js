@@ -3,7 +3,7 @@ import Card from "../card";
 
 const Courses = () => {
   return (
-    <section className="mx-auto  py-28 bg-gray-100 px-5">
+    <section className="mx-auto py-28 bg-gray-100 px-5">
       <main className="mx-auto sm:container">
         <p className="capitalize text-3xl font-bold">Top Courses</p>
         <div className="grid grid-rows-1 md:grid-flow-col gap-4 mt-6">
@@ -11,6 +11,7 @@ const Courses = () => {
             courseName="Technical - IIT Offered Courses"
             smallDesc="IITs offer specialized programming courses within Computer Science and Engineering departments, focusing on areas like Algorithms, Data Structures, Machine Learning, Artificial Intelligence, Software Engineering, and Web Technologies, aimed at equipping students with cutting-edge programming skills and computational thinking."
             img="images/course/DA.jpg"
+            url="/course/1"
           />
           <Card
             courseName="Non Technical Courses"
@@ -21,6 +22,7 @@ const Courses = () => {
             courseName="Language Courses"
             smallDesc="Language exam preparation courses focus on enhancing proficiency in languages like English, French, German, and Spanish, specifically targeting international exams such as TOEFL, IELTS, DELF, and DELE, to equip students with the necessary skills for academic and professional success in global settings."
             img="images/course/DS.jpg"
+            url="/course/3"
           />
           <Card
             courseName="Competitive Exam Courses"

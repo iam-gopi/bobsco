@@ -13,7 +13,7 @@ export default function Footer() {
           <div className="mb-6 md:mb-0">
             <a href="#" className="flex items-center">
               <img
-                src="images/logo.png"
+                src={`${process.env.PUBLIC_URL}/images/logo.png`}
                 className="h-40 me-3"
                 alt="Bobsco Edu Logo"
               />
