@@ -9,4 +9,4 @@ const userSchema = new Schema({
   address: String,
 });
 
-module.export = VedhikSchema = mongoose.model("VedhikForm", userSchema);
+module.exports = VedhikSchema = mongoose.model("VedhikForm", userSchema);
