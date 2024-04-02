@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, createHashRouter } from "react-router-dom";
 import Courses from "../../components/courses";
 import VedhikModel from "../../components/vedhik-model";
 import About from "../../components/about/About";
@@ -7,7 +7,7 @@ import Testimonial from "../../components/testimonial/Testimonial";
 import Gallery from "../../components/gallery/Gallery";
 import SubCourses from "../../components/sub-courses/SubCourses";
 
-export default createBrowserRouter([
+export default createHashRouter([
   {
     path: "/course",
     element: <Courses />,

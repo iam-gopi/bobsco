@@ -6,7 +6,7 @@ export default function Card({ courseName, smallDesc, img, url }) {
       <a href="#">
         <img
           className="rounded-t-lg h-52 w-full"
-          src={img}
+          src={`${process.env.PUBLIC_URL}/${img}`}
           alt=""
           data-aos="fade-up"
           data-aos-duration="1000"
