@@ -5,7 +5,7 @@ const Gallery = () => {
   let images = [];
   for (let index = 1; index <= 50; index++)
     images.push({
-      src: `${process.env.PUBLIC_URL}/images/Gallery/${index}.jpeg`,
+      src: `${process.env.PUBLIC_URL}/images/gallery/${index}.jpeg`,
     });
 
   return (
