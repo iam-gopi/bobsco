@@ -7,7 +7,7 @@ import Testimonial from "../../components/testimonial/Testimonial";
 import Gallery from "../../components/gallery/Gallery";
 import SubCourses from "../../components/sub-courses/SubCourses";
 
-export default createHashRouter([
+export default createBrowserRouter([
   {
     path: "/course",
     element: <Courses />,
