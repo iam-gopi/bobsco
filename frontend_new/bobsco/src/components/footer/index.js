@@ -95,6 +95,7 @@ export default function Footer() {
           </div>
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-lg text-white sm:text-center ">
             © {new Date().getFullYear()}
@@ -214,6 +215,19 @@ export default function Footer() {
               <span className="sr-only">Snapchat</span>
             </a>
           </div>
+        </div>
+        <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+        <div className="text-center">
+          <p className="text-white text-lg">
+            Designed and Developed by
+            <a
+              className="underline underline-offset-4 hover:no-underline"
+              href="https://smartentry.net/"
+              target="_blank"
+            >
+              &nbsp;SmartEntry
+            </a>
+          </p>
         </div>
       </div>
     </footer>
